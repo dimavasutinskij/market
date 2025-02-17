@@ -1,9 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: "export", // Додаємо це для експорту статичних файлів
   images: {
-    domains: ["cdn.sanity.io"]
-  }
+    domains: ["cdn.sanity.io"],
+  },
+  // Видаляємо output: 'export'
+  // output: 'export'
 }
 
 module.exports = nextConfig;
