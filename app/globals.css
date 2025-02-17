@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;700&family=Lexend+Deca:wght@100;300;400;500;600;700;800&family=Roboto:wght@300;400;500;700;900&family=Yellowtail&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+@layer utilities {
+
+  /* Typogrophy */
+  .heading-1 {
+    @apply text-7xl sm:text-[70px] font-extrabold
+  }
+  .heading-2 {
+    @apply text-4xl sm:text-[50px] font-extrabold
+  }
+  .heading-3 {
+    @apply text-3xl sm:text-[40px] font-extrabold 
+  }
+  .heading-4 {
+    @apply text-2xl sm:text-[35px] font-extrabold
+  }
+  .heading-5 {
+    @apply text-xl sm:text-[30px] font-extrabold
+  }
+  .heading-6 {
+    @apply text-lg sm:text-[25px] font-extrabold
+  }
+  .subtitle {
+    @apply font-['Yellowtail'] text-[28px] sm:text-[36px]
+  }
+  .body-text {
+    @apply text-[16px] leading-[22px] font-normal;
+  }
+  .paragraph {
+    @apply text-[18px] leading-[29.772px]
+  }
+
+  /* Display */
+  .paddings {
+    @apply sm:p-24 px-6 py-12;
+  }
+  .y-paddings {
+    @apply sm:py-16 py-12;
+  }
+  .x-paddings {
+    @apply sm:px-24 px-6;
+  }
+  .x-paddings-2 {
+    @apply sm:px-32 px-6;
+  }
+  .flex-center {
+    @apply flex items-center justify-center
+  }
+  .flex-between {
+    @apply flex items-center justify-between
+  }
+
+  .btn-navigation {
+    @apply border-primary cursor-pointer transition-all hover:bg-primary hover:text-white font-bold uppercase bg-[#F9F1E7] text-body-text py-4 px-6 rounded-lg
+  }
+
+  .no-focus {
+    @apply focus-visible:ring-0 focus-visible:ring-transparent focus-visible:ring-offset-0 focus:outline-none !important;
+  }
+}
+
+
