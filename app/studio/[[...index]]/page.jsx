@@ -1,18 +1,20 @@
-// Генерація статичних параметрів для маршруту
+// pages/studio/[[...index]].jsx
+
 export async function generateStaticParams() {
-  return [
-    { index: 'page-1' },
-    { index: 'page-2' },
-    { index: 'page-3' },
-  ];
+    return [
+        { index: ['page-1'] },
+        { index: ['page-2'] },
+        { index: ['page-3'] }
+    ];
 }
 
-// Сторінка Studio
 export default function StudioPage({ params }) {
-  return (
-      <div>
-        Це сторінка для:
-        {params.index ? params.index : 'без параметрів'}
-      </div>
-  );
+    console.log(params); // Для дебагу
+
+    return (
+        <div>
+            <h1>Це сторінка зі статичними параметрами</h1>
+            <p>Параметри: {JSON.stringify(params)}</p>
+        </div>
+    );
 }

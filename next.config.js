@@ -1,10 +1,11 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  images: {
-    domains: ["cdn.sanity.io"],
+module.exports = {
+  async redirects() {
+    return [
+      {
+        source: '/studio/:index*',
+        destination: '/studio/:index', // Вказати правильний формат
+        permanent: false,
+      },
+    ];
   },
-  // Видаляємо output: 'export'
-  // output: 'export'
-}
-
-module.exports = nextConfig;
+};
