@@ -23,7 +23,7 @@
     "lucide-react": "^0.289.0",
     "netlify-lambda": "^2.0.16",
     "next": "^14.2.24",
-    "next-auth": "^13.5.8",
+    "next-auth": "^13.5.7",
     "next-sanity": "^5.5.10",
     "nextjs13-progress": "^1.1.45",
     "react": "^18",
