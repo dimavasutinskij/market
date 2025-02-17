@@ -1,3 +1,4 @@
+'use client'  // Додати це для позначення компонента як клієнтського
 
 import { NextStudio } from 'next-sanity/studio'
 import config from '../../../sanity.config'
